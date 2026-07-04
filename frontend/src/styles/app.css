@@ -1,0 +1,317 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1f2328;
+}
+
+/* ---- Botões de ação (Cadastrar Pessoa / Cadastrar Transação) ---- */
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary {
+  background-color: #1f2328;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #3a3f47;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #1f2328;
+  border: 1px solid #d8dce1;
+}
+
+.btn-secondary:hover {
+  background-color: #f0f1f3;
+}
+
+/* ---- Formulários ---- */
+
+.form-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 420px;
+  margin: 0 auto 32px auto;
+}
+
+.form-card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.form-field input,
+.form-field select {
+  padding: 10px 12px;
+  border: 1px solid #d8dce1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #1f2328;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1f2328;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.form-submit:hover {
+  background-color: #3a3f47;
+}
+
+/* ---- Tabela ---- */
+
+.table-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #fafbfc;
+}
+
+th {
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f0f1f3;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: #fafbfc;
+}
+
+/* Colunas de Receita e Despesa */
+.valor-receita {
+  color: #1a7f4e;
+  background-color: #eafaf1;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.valor-despesa {
+  color: #c0362c;
+  background-color: #fdecea;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.valor-saldo-positivo {
+  color: #1a7f4e;
+  background-color: #eafaf1;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.valor-saldo-negativo {
+  color: #c0362c;
+  background-color: #fdecea;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.linha-total-geral {
+  background-color: #fafbfc;
+  font-weight: 600;
+}
+
+.linha-total-geral td {
+  border-top: 2px solid #e5e7eb;
+}
+
+/* Botão de detalhes (seta) */
+.btn-detalhes {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #6b7280;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.btn-detalhes:hover {
+  background-color: #f0f1f3;
+}
+
+/* Linha expandida de detalhes */
+.linha-detalhes td {
+  background-color: #fafbfc;
+  padding: 16px 24px;
+}
+
+.linha-detalhes ul {
+  list-style: none;
+}
+
+.linha-detalhes li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eceef1;
+  font-size: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linha-detalhes li:last-child {
+  border-bottom: none;
+}
+
+.tag-tipo {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.tag-receita {
+  color: #1a7f4e;
+  background-color: #eafaf1;
+}
+
+.tag-despesa {
+  color: #c0362c;
+  background-color: #fdecea;
+}
+
+/* ---- Edição inline ---- */
+
+.celula-editando input,
+.linha-detalhes input,
+.linha-detalhes select {
+  padding: 6px 8px;
+  border: 1px solid #1f2328;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  width: 100%;
+}
+
+.acoes-linha {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-icone {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.btn-salvar {
+  color: #1a7f4e;
+  background-color: #eafaf1;
+}
+
+.btn-salvar:hover {
+  background-color: #d3f2e0;
+}
+
+.btn-descartar,
+.btn-excluir {
+  color: #c0362c;
+  background-color: #fdecea;
+}
+
+.btn-descartar:hover,
+.btn-excluir:hover {
+  background-color: #f9d8d4;
+}
+
+/* Ajuste na linha de detalhe pra acomodar os inputs/botões inline */
+.linha-detalhes li {
+  gap: 12px;
+  align-items: center;
+}
+
+.input-erro {
+  border-color: #c0362c !important;
+  background-color: #fef8f7;
+}
+
+.mensagem-erro {
+  color: #c0362c;
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
